@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+ <head>
+   <link rel="stylesheet" href="style.css" /> 
+    <title>
+        Petite
+    </title>
+</head>
+
+
+<body> 
+    <div class="grid-container">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine" />
+        <header class="header">
+        <div class="brand"> 
+            <button onclick="openBar()">
+                &#9776;
+            </button>
+            <a href="index.html">petite</a>
+        </div>
+        <div class="header-links">
+            <a href="cart.html">Cart</a>
+            <a href="signin.html">sign In</a>
+        
+        </div>
+
+        </header>
+        <aside class="sidebar"> 
+            <h3>Shopping categories</h3>
+            <button class="sideBar-close" onclick="closeBar()">X</button>
+            <ul>
+                <li><a href="dresses.html">dresses</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="bags.html">Bags</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main"> 
+        <div class="content">
+            <ul class="products">
+                <li><div class="product">
+                    <img class="product-image" src="images/p1.jpg" alt="product" /> 
+                    <div class="product-name"><a href="product.html">Cooktail pink dress</a></div>
+                    <div class="product-brand">Givanchy</div>
+                    <div class="product-price">$50</div>
+                    <div class="product-raiting">4.5 stars(10 reviews)</div>
+
+                </div>
+                </li>
+
+                <li><div class="product">
+                    <img class="product-image" src="images/p2.jpg" alt="product" /> 
+                    <div class="product-name"><a href="product.html">cooktail black dress</a></div>
+                    <div class="product-brand">Ohpolly</div>
+                    <div class="product-price">$80</div>
+                    <div class="product-raiting">4.5 stars(10 reviews)</div>
+
+                </div>
+                </li>
+
+                <li><div class="product">
+                    <img class="product-image" src="images/p3.jpg" alt="product" /> 
+                    <div class="product-name"><a href="product.html">red sparks dress</a></div>
+                    <div class="product-brand">Ohpolly</div>
+                    <div class="product-price">$50</div>
+                    <div class="product-raiting">4.5 stars(10 reviews)</div>
+
+                </div>
+                </li>
+
+
+                <li><div class="product">
+                    <img class="product-image" src="images/p4.jpg" alt="product" /> 
+                    <div class="product-name"><a href="product.html">little pink dress with sparks</a></div>
+                    <div class="product-brand">Ohpolly</div>
+                    <div class="product-price">$60</div>
+                    <div class="product-raiting">4.5 stars(10 reviews)</div>
+
+                </div>
+                </li>
+
+                <li><div class="product">
+                    <img class="product-image" src="images/p5.jpg" alt="product" /> 
+                    <div class="product-name"><a href="product.html">white petite dress</a></div>
+                    <div class="product-brand">Petite</div>
+                    <div class="product-price">$50</div>
+                    <div class="product-raiting">4.5 stars(10 reviews)</div>
+
+                </div>
+                </li>
+                
+            </ul>
+        </div>
+        </main>
+        <footer class="footer">
+            All rights resereved to Aiden Platt and Sean Shvarzman
+        </footer>
+    </div>
+
+
+<script>
+    function openBar(){
+        document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeBar(){
+        document.querySelector(".sidebar").classList.remove("open");
+    }
+   </script>
+    </body>
+</html>
+

@@ -1,0 +1,254 @@
+html{
+  font-size: 62.5%;
+ box-sizing: border-box; 
+}
+
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+
+#root{
+  height: 100%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+.header{
+  grid-area: header;
+  background-color: #7c044a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items:center;
+}
+
+.brand a{
+  font-size: 70px;
+  color:#ffffff;
+  font-weight: bold;
+  font-family: 'Tangerine', serif;
+  text-decoration: none;  
+}
+
+.header-links a{
+  color: #ffffff;
+  text-decoration: none;
+  
+  
+}
+.header-links a:hover{
+  color: red;
+}
+.brand a:hover{
+  color: black;
+}
+.main{
+  grid-area:main;
+}
+.footer{
+  grid-area: footer;
+  background-color: #7c044a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  
+  color:gray;
+  text-decoration: none;
+}
+a:hover{
+  color: purple;
+}
+
+
+/*home*/
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products li{
+  list-style-type:none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1rem;
+  height: 50rem;
+  border-bottom: .1rem #c0c0c0 solid; 
+}
+.product{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-brand{
+  font-size: 1.2rem;
+  color: gray;
+}
+.product-price{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-image{
+  max-width: 30rem;
+  max-height: 30rem;
+  border-radius: 8px;
+   
+}
+.product-raiting{
+  margin-bottom: 1rem;
+}
+
+/*Sidebar*/
+
+.brand button {
+  font-size: 2.5rem;
+  padding: .5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sidebar{
+  position: fixed;
+  transition: all 1s;
+  transform:translateX(-30rem);
+  width:30rem;
+  background-color: #ffffff;
+  height: 100%;
+
+}
+.sidebar.open{
+  transform:translateX(0);
+}
+
+.sideBar-close{
+ border-radius: 50%;
+ border: 0.1rem black solid;
+ width: 3rem;
+ height: 3rem;
+ padding: 0.5rem;
+ font-size: 2rem;
+ padding-top: 1%;
+ cursor: pointer;
+ position: absolute;
+ right: 0.5rem;
+ top: 1.5rem;
+}
+
+/*Details*/
+
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /*for small screens*/
+  padding: 1rem;
+}
+
+.image {
+  flex: 2 1 60rem;
+}
+
+.image img{
+max-width: 60rem;
+widows: 100%;
+border-radius: 1rem;
+}
+
+.info {
+  flex: 1 1 30rem;
+}
+
+.action{
+  flex: 1 1 30rem;
+  border: .1rem #909090 solid;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+.action ul li:last-child{
+display: flex;
+flex-direction: column;
+}
+
+.button{
+  padding: 1rem;
+  border: 0.1rem #080808 solid;
+  border-radius: 1rem;
+  background-color: rgb(196, 14, 126);
+}
+
+.button:hover{
+  cursor: pointer;
+  border: 0.1rem #080808 solid;
+  background-color: #ffffff;
+}
+
+.action ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.info ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.info li, .action li{
+  margin-bottom: 1rem;
+}
+
+.Back{
+  padding:1rem;
+}
+
+/* LogInScreen */
+
+.login{
+padding:1rem;
+  color: black solid;
+font-size: 3rem;
+line-height: 5rem;
+}
+
+.loginbutton{
+  
+  font-size: 3rem;
+  color: white;
+  background-color: pink;
+  align-items: flex-start;
+  border: 0.5rem pink solid;
+}
+
+.loginbutton:hover{
+  cursor: pointer;
+  background-color: purple; 
+  border: 0.5rem purple solid;
+}
+
+
+
